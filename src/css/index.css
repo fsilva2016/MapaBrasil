@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -65,9 +65,9 @@ body {
 .modal-dialog {
     position: relative;
     background: #fff;
-    width: 300px;
+    width: auto;
     min-width: 100px;
-    height: 350px;
+    height: auto;
     padding: 20px;
     border-radius: 10px;
 }
@@ -126,6 +126,7 @@ footer .container {
 footer {
     background: rgb(53, 53, 53);
     display: flex;
+    margin-top: 60px;
 }
 
 footer h3,
@@ -147,3 +148,211 @@ footer {
 footer a {
     color: #fff;
 }
+
+.map_mobile {
+    width: 100%;
+}
+
+.map_mobile .container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.mobile_maps ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.mobile_maps li {
+    flex: 1 1 40%;
+    margin: 5px;
+    list-style-type: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ffffff87;
+}
+
+.mobile_maps li a {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    font-size: min(14px, 4vw);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.mobile_maps {
+    background: url(../../src/img/mapadasregioesdobrasil.jpg);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.map_mobile {
+    display: none;
+}
+
+@media (max-width:720px) {
+    .map_mobile {
+        display: block;
+    }
+    .conteiner {
+        padding: 10px;
+    }
+    .modal-dialog {
+        min-height: 75%;
+    }
+    iframe.modal_mapa {
+        width: 100%;
+    }
+    footer .container {
+        padding: 10px;
+        text-align: justify;
+    }
+    .modal {
+        padding: 15px;
+    }
+    .container {
+        display: none;
+    }
+}
+
+
+/*
+.map_mobile li a#mb_pa {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_pa {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_sc {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_rs {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_rj {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_es {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_go {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_df {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_mt {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_ba {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_se {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_al {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_pe {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_rn {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_pb {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_ce {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_pi {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_ma {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_to {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_pa {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_ap {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_rr {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_am {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_ac {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+
+a#mb_ro {
+    background-position: 37% 80%;
+    background-size: 371px;
+}
+*/
